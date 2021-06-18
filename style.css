@@ -1,8 +1,38 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  color: #444;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+  & .slider__image {
+    color: #2196F3;
+    font-size: 8rem;
+  }
+
+  & .slider__content {
+    padding: 2rem;
+  
+    & .slider__caption {
+      margin: 2rem 0 1rem;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+    }
+  
+    & .slider__txt {
+      max-width: 400px;
+      color: #999;
+    }
+  }
 }
